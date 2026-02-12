@@ -74,3 +74,7 @@ For this example, you will be using the transformers library, which is an open-s
   Step 5.6: Decode output
   Step 5.7: Update conversation history
   Step 6: Repeat
+
+# Demo:
+<img width="811" height="91" alt="image" src="https://github.com/user-attachments/assets/9d21b858-ce51-4d4f-b6cc-3e0d5106f8df" />
+
