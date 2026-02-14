@@ -75,6 +75,26 @@ For this example, you will be using the transformers library, which is an open-s
   Step 5.7: Update conversation history
   Step 6: Repeat
 
-# Demo:
+## Demo:
 <img width="811" height="91" alt="image" src="https://github.com/user-attachments/assets/9d21b858-ce51-4d4f-b6cc-3e0d5106f8df" />
 
+# Integrating your Chatbot into a Web Interface
+  ## Prerequisites
+    python3.11 -m pip install flask
+    python3.11 -m pip install flask_cors
+    python3.11 -m pip install transformers==4.38.2
+    python3.11 -m pip install torch==2.2.1
+  
+  ## Integrating your chatbot into your Flask server
+     Structure expected to receive in the incoming HTTP request:
+       {
+          'prompt': 'message'
+       }
+    See: chatbot_app.py
+
+    Now let's test your implementation by using curl to make a POST request to <HOST>/chatbot with the following request body: {'prompt':'Hello, how are you today?'}:
+    
+      Open a new terminal: Select terminal tab –> open new terminal
+        curl -X POST -H "Content-Type: application/json" -d '{"prompt": "Hello, how are you today?"}' 127.0.0.1:5000/chatbot
+      Here's the output of the above code:
+        I am doing very well today as well. I am glad to hear you are doing well.
